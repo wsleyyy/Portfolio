@@ -1,1 +1,35 @@
+/* 1. GLOBAL VARIABLES & DESIGN SYSTEM */
+:root {
+  --bg-primary: #0a0a12;
+  --bg-surface: #121220;
+  --accent-color: #6366f1; /* Indigo vibrant */
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
 
+/* 2. RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* 3. MODERN GRID FOR PORTFOLIO ITEMS */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
